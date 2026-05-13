@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>THE ROOFTOP ARENA Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f0f0f;
+    color:#fff;
+    line-height:1.6;
+}
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#111,#1f1f1f,#000);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:3rem;
+    color:#ffcc00;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+    color:#ddd;
+}
+
+.contact{
+    margin-top:15px;
+    font-size:0.95rem;
+    color:#bbb;
+}
+
+.section{
+    background:#171717;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+    border:1px solid rgba(255,255,255,0.08);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#ffcc00;
+    border-left:5px solid #ffcc00;
+    padding-left:15px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.menu-item{
+    background:#222;
+    padding:16px;
+    border-radius:14px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.menu-item:hover{
+    transform:translateY(-4px);
+    background:#292929;
+}
+
+.item-name{
+    font-weight:600;
+    font-size:1rem;
+    color:#fff;
+}
+
+.price{
+    color:#ffcc00;
+    font-weight:700;
+    margin-top:5px;
+}
+
+.offer-box{
+    background:linear-gradient(135deg,#ffcc00,#ff9500);
+    color:#000;
+    padding:18px;
+    border-radius:15px;
+    margin-bottom:18px;
+    font-weight:600;
+}
+
+.offer-box h3{
+    margin-bottom:10px;
+}
+
+.note{
+    background:#111;
+    padding:18px;
+    border-radius:14px;
+    margin-top:20px;
+    border:1px dashed #ffcc00;
+}
+
+footer{
+    text-align:center;
+    padding:30px 10px;
+    color:#bbb;
+    font-size:0.95rem;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.table th,
+.table td{
+    border:1px solid #333;
+    padding:12px;
+    text-align:center;
+}
+
+.table th{
+    background:#ffcc00;
+    color:#000;
+}
+
+.badge{
+    display:inline-block;
+    background:#ffcc00;
+    color:#000;
+    padding:4px 10px;
+    border-radius:50px;
+    font-size:0.8rem;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.1rem;
+    }
+
+    .section-title{
+        font-size:1.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>THE ROOFTOP ARENA</h1>
+    <p>Rooftop Cafe • Gaming Lounge • Private Theatre</p>
+
+    <div class="contact">
+        📍 Bhojubeer Panchkoshi Road, Varanasi <br>
+        📞 6386889752 | 6393568798 <br>
+        📸 Instagram: @rooftoparena.vns
+    </div>
+</header>
+
+<!-- COMBO -->
+<section class="section">
+    <h2 class="section-title">COMBO OFFERS</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <div class="item-name">Sandwich/Burger/Maggie + Fries + Cold Drink</div>
+            <div class="price">₹129</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-name">Pizza/Rice/Noodles + Fries + Drink/Shake</div>
+            <div class="price">₹249</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-name">Veg Rice/Noodles + Paneer Gravy</div>
+            <div class="price">₹249</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-name">Pizza + Fries + Cold Drink</div>
+            <div class="price">₹199</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- NOODLES -->
+<section class="section">
+    <h2 class="section-title">NOODLES</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Veg Noodles</div><div class="price">₹149</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Noodles</div><div class="price">₹189</div></div>
+        <div class="menu-item"><div class="item-name">Garlic Noodles</div><div class="price">₹159</div></div>
+        <div class="menu-item"><div class="item-name">Bangkok Noodles</div><div class="price">₹159</div></div>
+        <div class="menu-item"><div class="item-name">Hakka Noodles</div><div class="price">₹159</div></div>
+    </div>
+</section>
+
+<!-- RICE -->
+<section class="section">
+    <h2 class="section-title">RICE</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Veg Rice</div><div class="price">₹149</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Rice</div><div class="price">₹189</div></div>
+        <div class="menu-item"><div class="item-name">Rizwan Rice</div><div class="price">₹159</div></div>
+        <div class="menu-item"><div class="item-name">Mix Veg Rice</div><div class="price">₹199</div></div>
+    </div>
+</section>
+
+<!-- FRIES -->
+<section class="section">
+    <h2 class="section-title">FRIES & SNACKS</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">French Fries</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Peri Peri Fries</div><div class="price">₹129</div></div>
+        <div class="menu-item"><div class="item-name">Baby Corn Crispy</div><div class="price">₹249</div></div>
+        <div class="menu-item"><div class="item-name">Honey Chilli Potato</div><div class="price">₹249</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Chilly Dry/Gravy</div><div class="price">₹219</div></div>
+        <div class="menu-item"><div class="item-name">Onion Pakoda</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Pakoda</div><div class="price">₹149</div></div>
+    </div>
+</section>
+
+<!-- SANDWICH -->
+<section class="section">
+    <h2 class="section-title">SANDWICH</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Veg Sandwich</div><div class="price">₹70</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Sandwich</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Masala Sandwich</div><div class="price">₹109</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Patiala Sandwich</div><div class="price">₹169</div></div>
+        <div class="menu-item"><div class="item-name">Club Sandwich</div><div class="price">₹160</div></div>
+    </div>
+</section>
+
+<!-- BURGER -->
+<section class="section">
+    <h2 class="section-title">BURGER</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Veg Burger</div><div class="price">₹59</div></div>
+        <div class="menu-item"><div class="item-name">Cheese Burger</div><div class="price">₹79</div></div>
+        <div class="menu-item"><div class="item-name">Loaded Burger</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Burger</div><div class="price">₹79</div></div>
+    </div>
+</section>
+
+<!-- SHAKES -->
+<section class="section">
+    <h2 class="section-title">SHAKES</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Banana Shake</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Chocolate Shake</div><div class="price">₹119</div></div>
+        <div class="menu-item"><div class="item-name">Cold Coffee</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Oreo Shake</div><div class="price">₹129</div></div>
+        <div class="menu-item"><div class="item-name">Mango Shake</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Pineapple Shake</div><div class="price">₹119</div></div>
+    </div>
+</section>
+
+<!-- MAGGIE -->
+<section class="section">
+    <h2 class="section-title">MAGGIE</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Veg Maggie</div><div class="price">₹49</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Maggie</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Paneer Cheese Maggie</div><div class="price">₹129</div></div>
+    </div>
+</section>
+
+<!-- PIZZA -->
+<section class="section">
+    <h2 class="section-title">PIZZA</h2>
+
+    <table class="table">
+        <tr>
+            <th>Pizza</th>
+            <th>Small</th>
+            <th>Medium</th>
+            <th>Large</th>
+        </tr>
+
+        <tr>
+            <td>Margherita</td>
+            <td>₹99</td>
+            <td>₹149</td>
+            <td>₹199</td>
+        </tr>
+
+        <tr>
+            <td>Paneer Pizza</td>
+            <td>₹99</td>
+            <td>₹149</td>
+            <td>₹199</td>
+        </tr>
+
+        <tr>
+            <td>Vegie Farm</td>
+            <td colspan="3">₹129 (One Size)</td>
+        </tr>
+
+        <tr>
+            <td>Rooftop Arena Special</td>
+            <td colspan="3">₹249 (Special)</td>
+        </tr>
+
+    </table>
+</section>
+
+<!-- MOJITO -->
+<section class="section">
+    <h2 class="section-title">MOJITO & MOCKTAILS</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Lemon Mojito</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Blue Lagoon</div><div class="price">₹189</div></div>
+        <div class="menu-item"><div class="item-name">Mojito Masala Soda</div><div class="price">₹119</div></div>
+    </div>
+</section>
+
+<!-- SOFT DRINK -->
+<section class="section">
+    <h2 class="section-title">SOFT DRINKS</h2>
+
+    <div class="menu-grid">
+        <div class="menu-item"><div class="item-name">Cold Drinks</div><div class="price">₹49</div></div>
+        <div class="menu-item"><div class="item-name">Energy Drink</div><div class="price">₹99</div></div>
+        <div class="menu-item"><div class="item-name">Water Bottle (500ML)</div><div class="price">₹20</div></div>
+    </div>
+</section>
+
+<!-- GAMING -->
+<section class="section">
+    <h2 class="section-title">GAMING & THEATRE</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <div class="item-name">PS Gaming</div>
+            <div class="price">₹100 / Hour</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-name">Steering Wheel Gaming</div>
+            <div class="price">₹200 / Hour</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-name">Private Theatre (Couple)</div>
+            <div class="price">₹2500 / 3 Hr</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-name">Private Theatre (Group Max 6)</div>
+            <div class="price">₹3500 / 3 Hr</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- OFFERS -->
+<section class="section">
+    <h2 class="section-title">SPECIAL OFFERS</h2>
+
+    <div class="offer-box">
+        <h3>🔥 DAILY OFFERS</h3>
+        ✔ Buy 1 Pizza Get 1 Cold Drink Free <br>
+        ✔ 1 Hr Gaming 4 Person @ ₹249 <br>
+        ✔ Flat 30% Off on Couple Combos <br>
+        ✔ 30% Off on Orders Above ₹499
+    </div>
+
+    <div class="offer-box">
+        <h3>🎮 GAMING COMBOS</h3>
+        Gamer Combo – ₹199 <br>
+        Duo Gaming Combo – ₹299 <br>
+        Squad Combo – ₹499
+    </div>
+
+    <div class="offer-box">
+        <h3>🎥 PRIVATE THEATRE COMBOS</h3>
+        Netflix & Chill Combo – ₹999 <br>
+        Birthday Special Combo – ₹1999 <br>
+        Movie Night Combo – ₹2000 / ₹3000
+    </div>
+
+    <div class="offer-box">
+        <h3>🧑‍🎓 STUDENT OFFERS</h3>
+        Student Power Combo – ₹99 <br>
+        After Coaching Combo – ₹129 <br>
+        Exam Break Combo – ₹179
+    </div>
+
+</section>
+
+<!-- FAMILY COMBO -->
+<section class="section">
+    <h2 class="section-title">TODAY FAMILY COMBO</h2>
+
+    <div class="offer-box">
+        ₹799 ONLY
+        <br><br>
+
+        ✔ 2 Vegie Farm Pizza / Paneer Pizza <br>
+        ✔ 2 Veg Burgers / Veg Sandwich <br>
+        ✔ 2 Rice / Noodles <br>
+        ✔ Large Fries / Peri Peri Fries <br>
+        ✔ 4 Drinks
+    </div>
+
+    <div class="note">
+        <strong>IMPORTANT NOTES</strong><br><br>
+
+        ✔ Restaurant Offers Valid on Minimum ₹500 Order <br>
+        ✔ PS Gaming Offer Valid with Compulsory Food Order <br>
+        ✔ Theatre Offer Valid with Compulsory Food Order
+    </div>
+
+</section>
+
+<footer>
+    © 2026 THE ROOFTOP ARENA • Designed for GitHub Pages
+</footer>
+
+</div>
+
+</body>
+</html>
